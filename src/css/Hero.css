@@ -1,0 +1,24 @@
+.hero{
+    
+    width: 100%;
+    height:80vh;
+    background-color: aqua;
+    background-image: url(../../design/banner_home.jpg);
+    background-position: center;
+   
+}
+.hero__container{
+    position: absolute;
+    margin: 50px;
+}
+.hero__container h1{
+    width: 400px;
+    font-size: 40pt;
+    font-family: roboto;
+    font-weight:500;
+    color: var(--white);
+
+}
+.hero__container span{
+    color: var(--yellow-color);
+}
