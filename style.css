@@ -1,9 +1,19 @@
+@import './src/css/Hero.css';
+@import './src/css/Navbar.css';
+@import './src/css/Modal.css';
+@import './src/css/logo.css';
+@import './src/css/Second.css';
+@import './src/css/Card.css';
+@import './src/css/Footer.css';
+@import './src/css/results.css';
+
 body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 *{
     font-family: roboto;
 }

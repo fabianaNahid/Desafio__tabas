@@ -10,8 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
     <!--importação do css-->
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./src/css/Hero.css">
-    <link rel="stylesheet" href="./src/css/Navbar.css">
+
     <title>Tabas</title>
 </head>
 
@@ -19,8 +18,7 @@
     <header>
         <section class="navbar__container">
             <div class="logo">
-                <img src="./src/images/logo-topo.svg" alt="logo">
-
+                <img src="./src/images/logo-topo.svg" alt="logo" class="logo">
             </div>
             <ul class="list_nav">
                 <li>Apartment</li>
@@ -29,8 +27,8 @@
             </ul>
             <div class="links">
                 <div class="first__links">Support</div>
-                <div class="first__links">log-in</div>
-                <div class="second__links">Sing up</div>
+                <button class="logon" onclick="escondeDiv()">log-in</button>
+                <button class="logon yellow">Sing up</button>
             </div>
         </section>
 
@@ -39,9 +37,164 @@
         <div class="hero__container">
             <h1>Live your life felling at <span>Home</span></h1>
         </div>
+    </div>
+    <div class="login__modal" id="hide">
+        <button class="close">
+            <Img src="./src/images/close.png" />
+        </button>
+        <section class="Login__container">
+            <div class="form__inputs">
+                <img src="./src/images/logo-topo.svg" class="logo" />
 
+                <form onsubmit="return enviar();">
+                    <input type="email" name="email" placeholder="Seu email" id="inputEmail" />
+                    <input type="password" name="senha" placeholder="Seu senha" id="inputPassword" />
+                    <button class="button_enter" id="btnEnter">Entrar</button>
+                </form>
+
+            </div>
+        </section>
+    </div>   
+
+    <div class="second__part">
+        <div class="texto">
+            <h5>PREMIUM CHOICE</h5>
+            <h3>Living in a Tabas home</h3>
+            <p>Quality of life. That simple. Besides the coolest spots in the best neighborhoods of São Paulo, we offer
+                completely renovated apartments, with all the conveniences. Everything for the most comfortable
+                experience.</p>
+        </div>
+        <div class="container__grid">
+            <ul class="card_grid">
+                <li>
+                    <img src="./src/images/icon1.svg" alt="">
+                    <p>this is just test</p>
+                </li>
+                <li>
+                    <img src="./src/images/icon2.svg" alt="">
+                    <p>this is just test</p>
+                </li>
+                <li>
+                    <img src="./src/images/icon3.svg" alt="">
+                    <p>this is just test</p>
+                </li>
+                <li>
+                    <img src="./src/images/icon4.svg" alt="">
+                    <p>this is just test</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="informacoes">
+            <main class="login">
+                <div class="texto login__container">
+                    <h1 class="login__title">Deseja receber mais informações?</h1>
+                    <form class="login__form">
+                        <input class="login__input" type="email" placeholder="e-mail" id="email" />
+                        <span class="login__input-border"></span>
+                        <input class="login__input" type="password" placeholder="senha" id="password" />
+                        <span class="login__input-border"></span>
+                        <button class="login__submit" onclick="validar()">Cadastrar</button>
+                    </form>
+                </div>
+                <div id="result">
+                    <p id="resultemail"></p>
+                    <p id="resultpassword"></p>
+                </div>
+            </main>
+        </div>
+
+        <div class="everthings">
+            <div class="card__container">
+                <div class="page-text">
+                    <spam>
+                        BUSINESS
+                    </spam>
+                    <h3>
+                        Corporate
+                    </h3>
+                    <p>
+                        Manage easily all your corporate apartments needs with flexibility and exclusive support. Save
+                        time and money. Ideal for you and your team.
+                    </p>
+                    <button>Get to know us</button>
+                </div>
+                <div class="img_card">
+                    <img src="./src/images/woman.jpg" alt="">
+                </div>
+
+            </div>
+        </div>
     </div>
 
+    <div id="resultForm">
+        <div id="Nome">
+
+        </div>
+        <div id="email">
+
+        </div>
+        <div id="mensagem">
+
+        </div>
+    </div>
+
+    <footer class="footer_father">
+        <ul class="footer__container">
+            <li class="q">
+                <img src="./src/images/logo-topo.svg" alt="" class="logo">
+                <p class="ph">Live your life feeling at Home.</p>
+            </li>
+            <li class="q">
+                <strong>
+                    GENERAL INFO
+                </strong>
+                <p>
+                    FAQ
+                </p>
+                <p>
+                    Contact us
+                </p>
+                <p>
+                    Careers
+                </p>
+            </li>
+            <li class="q">
+                <strong>
+                    FOR OWNERS
+                </strong>
+                <p>
+
+                    proprietario@tabas.com.br
+
+                </p>
+                <p>
+
+                    +55 11 4632 2155
+                </p>
+
+            </li>
+            <li class="q b">
+                <strong>
+                    FOR CORPORATES
+
+                </strong>
+                <p>
+
+                    corporate@tabas.com.br
+
+                </p>
+                <p>
+
+                    +55 11 4632 2155
+                </p>
+
+            </li>
+        </ul>
+
+    </footer>
 </body>
+<script src="./src/js/Login.js"></script>
+<script src="./src/js/Modal.js"></script>
 
 </html>

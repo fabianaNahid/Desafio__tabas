@@ -1,0 +1,44 @@
+@import '../Varibles.css';
+
+.everthings{
+    background-color: var(--white--color);
+    margin-top: 30px;
+}
+.card__container{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    max-width:1200px ;
+}
+
+.page-text spam{
+    color: var(--yellow-color);
+}
+.page-text h3{
+    margin-top:0 ;
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-weight: 700;
+}
+.page-text p{
+    font-size: 20px;
+    font-weight: 100;
+}
+.page-text button{
+    padding: 20px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    background-color: var(--black--color);
+    border: none;
+    color: var(--white);
+}
+.img_card{
+
+    height: 100%;
+}
+.img_card img {
+    border: 15px solid var(--yellow-color);
+    flex-shrink: 0;
+    width: 500px;
+    height:100% ;
+}

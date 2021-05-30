@@ -1,16 +1,14 @@
 @import '../Varibles.css';
 .navbar__container{
+    position: fixed;
+    z-index: 999;
     width: 100%;
     background-color: var(--black--color);
     display: grid;
     grid-template-columns: 1fr 4fr 2fr;
     align-items: center;
 }
-.logo img{
-    padding: 10px 40px;
-    width: auto;
-    height: 50px;
-}
+
 .list_nav{
     text-transform: uppercase;
     display: flex;  
@@ -34,7 +32,15 @@
 .links div{
     padding: 0 20px;
 }
-.second__links{
+.logon{
+    text-transform: uppercase;
+    color: var(--white);
+    background: none;
+    border: none;
+    padding: 0 20px;
+    border-left: 1px solid var(--yellow-color);
+}
+.yellow{
     color: var(--yellow-color);
 }
 .first__links{

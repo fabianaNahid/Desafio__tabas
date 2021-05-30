@@ -1,0 +1,24 @@
+{
+  "name": "tabas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabianaNahid/tabas.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "js"
+  ],
+  "author": "Fabiana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fabianaNahid/tabas/issues"
+  },
+  "homepage": "https://github.com/fabianaNahid/tabas#readme"
+}
